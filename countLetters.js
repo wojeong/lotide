@@ -1,12 +1,13 @@
 const countLetters = function(str){
-  let letterCounter = {'a'}; 
+  let letterCounter = {};
+  const lowerCase = str.toLowerCase(); 
   
-  for(let letter of str){
+  for(let letter of lowerCase){
     if(!letterCounter[letter])
       letterCounter[letter] = 0;
-    letterCounter++;
+    letterCounter[letter]++;
   }
-  console.log(letterCounter);
+  return letterCounter;
 }
 
-console.log(countLetters("aaaaaa"));
+console.log(countLetters("aaaaaaAA"));
