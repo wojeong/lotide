@@ -3,3 +3,5 @@ const head = function(arr){
     return undefined;
   return arr[0];
 }
+const assertEqual = require('./assertEqual');
+module.exports = head;
