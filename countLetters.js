@@ -9,5 +9,4 @@ const countLetters = function(str){
   }
   return letterCounter;
 }
-
-console.log(countLetters("aaaaaaAA"));
+module.exports = countLetters;
